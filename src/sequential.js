@@ -22,12 +22,29 @@ function handleJsonSeq(data) {
     // Generate quantiles
     var quants = getQuants(data, "value");
     
-    // Generate style from quantiles
-    function getColor(d) {
-        return  d > quants["Q3"] ? '#d7301f' :
-                d > quants["Q2"] ? '#fc8d59' :
-                d > quants["Q1"] ? '#fdcc8a' :
-                '#fef0d9';
+      // Generate style from quantiles
+    if (selected_values["map_type"] == "sg" & selected_values["justice"] =="income") {
+            function getColor(d) {
+                return d > quants["Q3"] ? '#fef0d9' :
+                    d > quants["Q2"] ? '#fdcc8a' :
+                        d > quants["Q1"] ? '#fc8d59' :
+                            '#d7301f';
+            }
+        }
+    else if (selected_values["map_type"] == "ji" & (selected_values["justice"] == "acc" |(selected_values["justice"] == "ava" & selected_values["v1"] == "acc_pt") |selected_values["justice"] == "beh" )) {
+            function getColor(d) {
+                return d > quants["Q3"] ? '#fef0d9' :
+                    d > quants["Q2"] ? '#fdcc8a' :
+                        d > quants["Q1"] ? '#fc8d59' :
+                            '#d7301f';
+            }
+    }
+                else{function getColor(d) {
+                return d > quants["Q3"] ? '#d7301f' :
+                    d > quants["Q2"] ? '#fc8d59' :
+                        d > quants["Q1"] ? '#fdcc8a' :
+                            '#fef0d9';
+            }
     }
 
     function style(feature) {
