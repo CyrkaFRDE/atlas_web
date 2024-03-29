@@ -44,7 +44,7 @@
     "High": "Alto",
     "desc_biv": "Los barrios críticos son aquellos con un valor crítico en ambas variables",
 
-    "select_sg": "Grupos sociales",
+    "select_sg": "Seleccione un grupo social",
     "pop": "Población",
     "income": "Ingresos económicos",
     "high_income": "Ingresos altos",
@@ -83,7 +83,7 @@
     "cc": "Centros comunitarios",
     "radar_cc": "Acc. a Centros comunitarios",
 
-    "select_mot": "Modo de transporte",
+    "select_mot": "Seleccionar un modo de transporte",
     "w_700": "A pie, 700 m",
     "b_700": "Bicicleta, 10 min",
     "wpt_700": "A pie + Transporte público, 20 min",
