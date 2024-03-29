@@ -290,7 +290,7 @@ var selector_values_after_sp_1 = {
     "ji_v_sg": {
         "acc": {
             "amenity": {
-                "title": "select_sg",
+                "title": "select_sg_biv",
                 "values": [
                     {
                         "value": "tp",
@@ -355,7 +355,7 @@ var selector_values_after_sp_1 = {
         },
         "exp": {
             "amenity": {
-                "title": "select_sg",
+                "title": "select_sg_biv",
                 "values": [
                     {
                         "value": "tp",
@@ -403,7 +403,7 @@ var selector_values_after_sp_1 = {
         },
         "ava": {
             "amenity": {
-                "title": "select_sg",
+                "title": "select_sg_biv",
                 "values": [
                     {
                         "value": "tp",
@@ -451,7 +451,7 @@ var selector_values_after_sp_1 = {
         },
         "beh": {
             "amenity": {
-                "title": "select_sg",
+                "title": "select_sg_biv",
                 "values": [
                     {
                         "value": "tp",
