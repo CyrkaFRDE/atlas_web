@@ -690,10 +690,15 @@ function updateSelectorAfterSP1(name, justice_value) {
     curr_sp.setAttribute('id', 'sp-2');
     curr_sp.style.display = 'none'; // Initially hidden, show it when ready
 
-    let checkbox = document.createElement('input');
+     let checkbox = document.createElement('input');
     checkbox.type = 'checkbox';
     curr_sp.appendChild(checkbox);
 
+    let selectOptionsDiv = document.createElement('div');
+    selectOptionsDiv.className = 'select-options';
+    selectOptionsDiv.setAttribute('id', 'v1'); // Consider dynamic IDs or classes if multiple instances
+    curr_sp.appendChild(selectOptionsDiv);
+    document.body.appendChild(curr_sp);
     try {
         // Fetch possible values
         let selector_dict = selector_values_after_sp_1[map_type_value][justice_value][name]["values"];
