@@ -653,7 +653,8 @@ function updateSelectorAfterSP0(name, map_type_value) {
             select_options.appendChild(option);
         }
 
-        // Unfold in the interface
+         let selectedOption = document.querySelector('#sp-0 input[type="radio"]:checked').parentNode;
+        selectedOption.insertAdjacentElement('afterend', curr_sp);
         curr_sp.querySelector("input[type=checkbox]").checked = true;
 
         // Add function when checked
