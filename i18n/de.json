@@ -44,7 +44,8 @@
     "High": "Hoch",
     "desc_biv": "Die kritischen Bezirksteile sind diejenigen mit einem kritischen Wert für beide Variablen",
 
-    "select_sg": " Wählen ein Bevölkerungsgruppe \n",
+    "select_sg": "Bevölkerungsgruppen",
+    "select_sg_biv": " Wählen ein Bevölkerungsgruppe \n",
     "pop": "Bevölkerung",
     "income": "Geringes Einkommen",
     "high_income": "Hohes Einkommen",
