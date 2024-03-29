@@ -696,10 +696,6 @@ function updateSelectorAfterSP1(name, justice_value) {
     curr_sp.appendChild(checkbox);
 
     try {
-        // Change its title
-        let select_title_text = curr_sp.querySelector('.select-title-text');
-        select_title_text.setAttribute("i18n", selector_values_after_sp_1[map_type_value][justice_value][name]["title"])
-
         // Fetch possible values
         let selector_dict = selector_values_after_sp_1[map_type_value][justice_value][name]["values"];
         if (selector_dict.length == 0) { throw EvalError; }
