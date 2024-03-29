@@ -609,12 +609,10 @@ function updateSelectorAfterSP0(name, map_type_value) {
     // Find the .select-main to change
     let curr_sp = document.querySelector('#sp-1');
     curr_sp.style.display = 'block';
+    curr_sp.style.marginLeft = '20px'; 
 
     try {
-        // Change its title
-        let select_title_text = curr_sp.querySelector('.select-title-text');
-        select_title_text.setAttribute("i18n", selector_values_after_sp_0[map_type_value]["title"])
-
+    
         // Fetch possible values
         let selector_dict = selector_values_after_sp_0[map_type_value]["values"];
         if (selector_dict.length == 0) { throw EvalError; }
