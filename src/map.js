@@ -80,28 +80,29 @@ function changeMap() {
         switch (selected_values["justice"]) {
             case "acc":
                 if (selected_values["map_type"] == "ji") {
+                    selected_values["amenity"]="tp";
                     callGeoServer(
                         "acc_all",
-                        { "user": selected_values["v1"], "amenity": selected_values["amenity"], "mot": selected_values["mot"] },
+                        { "user": selected_values["amenity"], "amenity": selected_values["v1"], "mot": selected_values["mot"] },
                         handleJsonSeq
                     );
                 } else {
                     callGeoServer(
                         "acc_hilo",
-                        { "user": selected_values["v1"], "amenity": selected_values["amenity"], "mot": selected_values["mot"] },
+                        { "user": selected_values["amenity"], "amenity": selected_values["v1"], "mot": selected_values["mot"] },
                         handleJsonBiv
                     );
                 }
 
                 callGeoServer(
                     "pois",
-                    { "amenity": selected_values["amenity"] },
+                    { "amenity": selected_values["v1"] },
                     handleJsonPOIs
                 );
 
                 callGeoServer(
                     "service_areas",
-                    { "amenity": selected_values["amenity"], "mot": selected_values["mot"] },
+                    { "amenity": selected_values["v1"], "mot": selected_values["mot"] },
                     handleJsonAreas
                 );
 
@@ -117,7 +118,7 @@ function changeMap() {
                 } else {
                     callGeoServer(
                         "exposure_hilo",
-                        { "user": selected_values["v1"], "type": selected_values["amenity"] },
+                        { "user": selected_values["amenity"], "type": selected_values["v1"] },
                         handleJsonBiv
                     );
                 }
@@ -132,7 +133,7 @@ function changeMap() {
                 } else {
                     callGeoServer(
                         "availability_hilo",
-                        { "user": selected_values["v1"], "type": selected_values["amenity"] },
+                        { "user": selected_values["amenity"], "type": selected_values["v1"] },
                         handleJsonBiv
                     );
                 }
@@ -147,7 +148,7 @@ function changeMap() {
                 } else {
                     callGeoServer(
                         "behaviour_hilo",
-                        { "user": selected_values["v1"], "type": selected_values["amenity"] },
+                        { "user": selected_values["amenity"], "type": selected_values["v1"] },
                         handleJsonBiv
                     );
                 }
