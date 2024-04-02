@@ -45,6 +45,7 @@
     "desc_biv": "Die kritischen Bezirksteile sind diejenigen mit einem kritischen Wert für beide Variablen",
 
     "select_sg": "Bevölkerungsgruppen",
+    "select_sg_biv": " Wählen ein Bevölkerungsgruppe \n",
     "pop": "Bevölkerung",
     "income": "Geringes Einkommen",
     "high_income": "Hohes Einkommen",
@@ -83,7 +84,7 @@
     "cc": "Gemeindezentren",
     "radar_cc": "Err. von Gemeindezentren",
 
-    "select_mot": "Verkehrmittel",
+    "select_mot": "Wählen ein Verkehrmittel \n",
     "w_700": "Zu Fuß, 700m",
     "b_700": "Radfahren, 10min",
     "wpt_700": "Zu Fuß + ÖPNV, 20min",

@@ -238,6 +238,18 @@ input[type="checkbox"]:checked~.arrow {
     right: 5px;
 }
 
+#sp-1 input[type="checkbox"] {
+    display: none;
+}
+#sp-2 input[type="checkbox"] {
+    display: none;
+}
+#sp-3 input[type="checkbox"] {
+    display: none;
+}
+#sp-4 input[type="checkbox"] {
+    display: none;
+}
 .menu-items>.select-main>input[type="checkbox"]~.select-options {
     /* Don't display options when unchecked */
     display: none;
@@ -247,6 +259,7 @@ input[type="checkbox"]:checked~.arrow {
     /* Display options when checked */
     display: block;
 }
+
 
 .menu-items>.select-main>input[type="checkbox"]:checked~.select-options>.select-option {
     /* Display options when checked */
